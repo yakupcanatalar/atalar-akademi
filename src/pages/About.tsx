@@ -2,6 +2,24 @@ import React from 'react';
 import '../styles/About.css';
 
 const About: React.FC = () => {
+  const references = [
+    {
+      name: 'Ahmet Yılmaz',
+      profession: 'Veli',
+      comment: 'Sena Hoca sayesinde çocuğum matematiği sevmeye başladı ve LGS’de büyük bir başarı elde etti.',
+    },
+    {
+      name: 'Elif Kaya',
+      profession: 'Öğrenci',
+      comment: 'Sena Hoca’nın dersleri çok eğlenceli ve öğretici. Matematik artık benim için çok kolay!',
+    },
+    {
+      name: 'Mehmet Demir',
+      profession: 'Veli',
+      comment: 'Sena Hoca’nın birebir ilgisi ve özverisi sayesinde çocuğumun özgüveni arttı.',
+    },
+  ];
+
   return (
     <div className="about-page">
       <section className="about-hero card">
@@ -43,6 +61,19 @@ const About: React.FC = () => {
           <li>
             <strong>Deneyim:</strong> 5+ yıl Özel Ders
           </li>
+        </ul>
+      </section>
+
+      <section className="about-references card">
+        <h2 className="section-title">Referanslar</h2>
+        <ul className="references-list">
+          {references.map((ref, index) => (
+            <li key={index} className="reference-item">
+              <h3>{ref.name}</h3>
+              <p><strong>{ref.profession}</strong></p>
+              <p>"{ref.comment}"</p>
+            </li>
+          ))}
         </ul>
       </section>
     </div>

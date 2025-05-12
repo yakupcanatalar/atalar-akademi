@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Recommendations.css';
+import RecommendedTeachers from './RecommendedTeachers';
 
 const recommendationData = [
   {
@@ -70,6 +71,10 @@ const Recommendations: React.FC = () => {
           </div>
         </div>
       </section>
+
+<section className="recommended-teachers card">
+  <RecommendedTeachers />
+</section>
     </div>
   );
 };
