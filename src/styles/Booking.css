@@ -1,0 +1,75 @@
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.booking-info {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.booking-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-details {
+  margin-top: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.contact-details h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.contact-details p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    flex-direction: column;
+  }
+
+  .booking-info,
+  .booking-form {
+    width: 100%;
+  }
+}

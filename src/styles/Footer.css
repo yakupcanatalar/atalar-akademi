@@ -1,0 +1,82 @@
+.site-footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-contact,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-content h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-social .social-icons {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-links,
+  .footer-social {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-social .social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #FFD700;
+}

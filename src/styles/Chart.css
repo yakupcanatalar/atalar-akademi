@@ -1,0 +1,12 @@
+.chart-container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 100%;
+  }
+}
