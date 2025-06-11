@@ -7,6 +7,7 @@ import About from './pages/About';
 import Booking from './pages/Booking';
 import Recommendations from './pages/Recommendations';
 import './styles/global.css';
+import Announcement from './pages/Announcement';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             <Route path="/hakkimda" element={<About />} />
             <Route path="/randevu" element={<Booking />} />
             <Route path="/oneriler" element={<Recommendations />} />
+            <Route path="/duyurular" element={<Announcement />} />
           </Routes>
         </div>
         <Footer />
